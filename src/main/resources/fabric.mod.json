@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "funstuffs",
+	"version": "${version}",
+	"name": "Funstuffs",
+	"description": "This is a mod filled with fun little gadgets and gizmos and stuffs",
+	"authors": [
+		"DevThatCodes"
+	],
+	"contact": {
+		"homepage": "https://devthatcodes.github.io",
+		"sources": "https://github.com/DevThatCodes/funstuffs"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/funstuffs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.devthatcodes.funstuffs.Funstuffs"
+		],
+		"fabric-datagen": [
+			"com.devthatcodes.funstuffs.FunstuffsDataGenerator"
+		]
+	},
+	"mixins": [
+		"funstuffs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
